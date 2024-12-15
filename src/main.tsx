@@ -78,29 +78,22 @@ Devvit.addCustomPostType({
 
     // Render the custom post type
     return (
-      <vstack grow padding="small">
+      <vstack grow padding="small" backgroundColor='white'>
         <vstack
           grow={!webviewVisible}
           height={webviewVisible ? '0%' : '100%'}
           alignment="middle center"
         >
-          <text size="xlarge" weight="bold">
+          <text size="xlarge" weight="bold" color='black'>
             Ride the Bus
           </text>
           <spacer />
           <vstack alignment="start middle">
             <hstack>
-              <text size="medium">Username:</text>
-              <text size="medium" weight="bold">
+              <text size="medium" color='black'>Username:</text>
+              <text size="medium" weight="bold" color='black'>
                 {' '}
                 {username ?? ''}
-              </text>
-            </hstack>
-            <hstack>
-              <text size="medium">Current counter:</text>
-              <text size="medium" weight="bold">
-                {' '}
-                {counter ?? ''}
               </text>
             </hstack>
           </vstack>
