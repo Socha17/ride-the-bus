@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+#game-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row; /* Align cards horizontally */
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px; /* Space between the cards */
+}
+
+.card-container {
+  position: relative;
+  width: 80px;
+  height: 120px;
+  perspective: 1000px; /* Enable 3D effect */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-front {
+  background-color: white;
+}
+
+.card-back {
+  background-color: #ccc;
+  transform: rotateY(180deg); /* Initially hidden */
+}
+
+#controls {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #0079d3;
+  color: white;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#btn-restart {
+  margin-top: 20px;
+  background-color: #d9534f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+#btn-restart:hover {
+  background-color: #b52b27;
+}
+
+#btn-restart {
+  display: block; /* Make sure it's displayed */
+  margin: 20px auto; /* Center horizontally */
+}
+
+
+#instructions {
+  margin: 15px auto;
+  font-size: 10px;
+  color: #8c8c8c;
+  max-width: 600px;
+  line-height: 1.5;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Ride the Bus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="margin-top: 50px;">Ride the Bus</h1>
+    <h3 id="message"></h3>
+    <div id="game-container">
+      <div id="cards">
+        <div id="face-up-card" class="card">?</div>
+        <!-- The face-down cards will be dynamically appended here -->
+      </div>
+      <div id="controls">
+        <button id="btn-higher">Higher</button>
+        <button id="btn-same">Same</button>
+        <button id="btn-lower">Lower</button>
+      </div>
+      <p id="instructions">
+        Guess if the next card is higher, lower, or the same. If you're correct, the next card will flip. 
+        Try to flip all the cards to win the game!
+      </p>
+      <button id="btn-restart" style="display: none;">Restart Game</button>
+    </div>
+    <script type="application/javascript" src="script.js"></script>
+  </body>
+</html>
